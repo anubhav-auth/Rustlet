@@ -1,0 +1,15 @@
+[package]
+name = "Rustlet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.43.0", features = ["full", "fs"] }
+hyper = { version = "0.14", features = ["full"] }
+hyper-util = { version = "0.1.10", features = ["server", "http2"] }
+tokio-util = "0.7.13"
+tower = "0.4"
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.138"
